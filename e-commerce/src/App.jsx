@@ -9,7 +9,7 @@ import Aboutus from './pages/Aboutus';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import { useState } from 'react';
 import UserContext from './Hook component/UserContext';
-import CartProducts from './components/CartProducts';
+import CartProducts from './components/Cart component/CartProducts';
 
 function App({products}) {
 
@@ -29,6 +29,7 @@ const [cartItem, setCartItem] = useState([])
         <Route path="/unique product/:id" element={<ParticularProduct cartItem={cartItem} setCartItem={setCartItem} />} />
         <Route path="/addtocart" element={<CartProducts cartItem={cartItem} setCartItem={setCartItem} size={cartItem.length} />} />
         <Route path="/aboutus" element={<Aboutus />} />
+
       </Routes>
       </UserContext.Provider>
       

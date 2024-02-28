@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeComponent from '../components/HomeComponent'
+import HomeComponent from '../components/Home component/HomeComponent'
 function Home( {products, handleClick} ) {
 
 

@@ -75,24 +75,6 @@ function Aboutus() {
     </div>
     ))} */}
     
-    <table style={{ borderCollapse: 'collapse', width: '100%' }}>
-        <thead>
-          <tr>
-            <th style={tableCellStyle}>ID</th>
-            <th style={tableCellStyle}>Name</th>
-            <th style={tableCellStyle}>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          {currentPageData.map((row) => (
-            <tr key={row.id}>
-              <td style={tableCellStyle}>{row.id}</td>
-              <td style={tableCellStyle}>{row.name}</td>
-              <td style={tableCellStyle}>{row.age}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
 
       {/* Pagination */}
       {/* <ReactPaginate

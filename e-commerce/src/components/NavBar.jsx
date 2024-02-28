@@ -9,24 +9,24 @@ import addtocart from '../img/6445100.png'
 
 function NavBar({size}) {
   return (
-    <div style={{display:'flex', justifyContent:'space-between'}}>
+    <div style={{display:'flex', justifyContent:'space-between',width:'100%', height:'80px'}}>
+      <div >
       <Link to='/' style={{marginLeft:'5%'}} ><img style={{width:'100px', height:'100px'}} src={Logo} alt="Logo" /></Link>
-        <div style={{ width:'100%',marginTop:'5px'}}>
-        <nav style={{ width:'100%', marginTop:'30px' }}>
+      </div>
+      <div style={{ width:'100%',marginTop:'5px'}}>
+      <nav style={{ width:'100%', marginTop:'20px' }}>
             <ul style={{ display:'flex', justifyContent:'center'}}>
                 <Link to="/"  style={{textDecoration:'none', listStyle:'none', color:'black',padding:'10px'}}> Home </Link>
                 <Link to="/products" style={{textDecoration:'none', listStyle:'none', color:'black',padding:'10px'}}> Products </Link>
                 <Link to="/addtocart" style={{textDecoration:'none', listStyle:'none', color:'black',padding:'10px'}}> Add to Cart </Link>
                 <Link to="/aboutus" style={{textDecoration:'none', listStyle:'none', color:'black',padding:'10px'}}> About Us </Link>
-                <Link to="/addtocart" style={{ marginRight:'5%', marginTop:'10px'}}><img style={{width:'40px', height:'40px'}} src={addtocart} alt="" /></Link>
-                <Link style={{textDecoration:'none', listStyle:'none', color:'black',paddingTop:'10px',marginLeft:'-60px'}}>{size}</Link>
             </ul>
-        </nav>
-        </div>
-        
-        
-        
-
+      </nav>
+      </div>
+      <div style={{display:'flex', justifyContent:'center',alignItems:'center', width:'150px'}}>
+        <Link to="addtocart"><img style={{width:'40px',height:'40px'}} src={addtocart} alt="" /> </Link>
+        <button style={{textDecoration:'none',color:'white',marginTop:'-38px',fontWeight:'700',height:'20px', width:'20px', borderRadius:'50%',border:'none',backgroundColor:'red'}}>{size}</button>
+      </div>
         
     </div>
   )

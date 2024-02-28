@@ -1,0 +1,17 @@
+.cart-heading{
+    padding: 40px;
+    border: 1px gray solid;
+}
+.myReact-icons{
+ color: red;
+ height: 30px;
+ width: 30px;
+ margin-top: -20px;
+ cursor: pointer;
+}
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
